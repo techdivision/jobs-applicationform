@@ -5,9 +5,7 @@ Sending applicant data via e-mail can be non GDPR-compliant for a company.
 
 ### Installation
 
-TechDivision.Jobs.ApplicationForm is available via packagist. Add `"techdivision/jobs-applicationform" : "~1.0"` to the require section of the composer.json
-or run `composer require techdivision/jobs-applicationform`.  
-**This only installs the very basic card features. If you dont know what you do, we recommend using one of the other card packages instead.**
+TechDivision.Jobs.ApplicationForm is available via packagist. Add `"techdivision/jobs-applicationform" : "~1.0"` to the require section of the composer.json or run `composer require techdivision/jobs-applicationform`.  
 
 
 ## NodeTypes
