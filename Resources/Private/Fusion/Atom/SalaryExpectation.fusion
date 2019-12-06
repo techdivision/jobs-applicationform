@@ -1,0 +1,4 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.SalaryExpectation) < prototype(Neos.Form.Builder:SingleLineText.Definition) {
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.salaryExpectation.label')}
+    properties.placeholder = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.salaryExpectation.placeholder')}
+}

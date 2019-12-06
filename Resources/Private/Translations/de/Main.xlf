@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="TechDivision.Jobs.ApplicationForm" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="property.firstname.label" xml:space="preserve">
+                <target xml:lang="de">Vorname</target>
+            </trans-unit>
+            <trans-unit id="property.firstname.placeholder" xml:space="preserve">
+                <target xml:lang="de">Vorname</target>
+            </trans-unit>
+            <trans-unit id="property.lastname.label" xml:space="preserve">
+                <target xml:lang="de">Nachname</target>
+            </trans-unit>
+            <trans-unit id="property.lastname.placeholder" xml:space="preserve">
+                <target xml:lang="de">Nachname</target>
+            </trans-unit>
+            <trans-unit id="property.email.label" xml:space="preserve">
+                <target xml:lang="de">e-Mail</target>
+            </trans-unit>
+            <trans-unit id="property.email.placeholder" xml:space="preserve">
+                <target xml:lang="de">e-Mail</target>
+            </trans-unit>
+            <trans-unit id="property.phone.label" xml:space="preserve">
+                <target xml:lang="de">Telefon</target>
+            </trans-unit>
+            <trans-unit id="property.phone.placeholder" xml:space="preserve">
+                <target xml:lang="de">Telefon</target>
+            </trans-unit>
+            <trans-unit id="property.company.label" xml:space="preserve">
+                <target xml:lang="de">Firma</target>
+            </trans-unit>
+            <trans-unit id="property.company.placeholder" xml:space="preserve">
+                <target xml:lang="de">Firma</target>
+            </trans-unit>
+            <trans-unit id="property.message.label" xml:space="preserve">
+                <target xml:lang="de">Nachricht</target>
+            </trans-unit>
+            <trans-unit id="property.message.placeholder" xml:space="preserve">
+                <target xml:lang="de">Nachricht</target>
+            </trans-unit>
+            <trans-unit id="property.salutation.label" xml:space="preserve">
+                <target xml:lang="de">Anrede</target>
+            </trans-unit>
+            <trans-unit id="property.salutation.mr" xml:space="preserve">
+                <target xml:lang="de">Herr</target>
+            </trans-unit>
+            <trans-unit id="property.salutation.mrs" xml:space="preserve">
+                <target xml:lang="de">Frau</target>
+            </trans-unit>
+            <trans-unit id="property.salutation.divers" xml:space="preserve">
+                <target xml:lang="de">divers</target>
+            </trans-unit>
+            <trans-unit id="property.additionalInformation.label" xml:space="preserve">
+                <target xml:lang="de">Zusätzliche Informationen</target>
+            </trans-unit>
+            <trans-unit id="property.jobs.label" xml:space="preserve">
+                <target xml:lang="de">Verfügbare Jobs</target>
+            </trans-unit>
+            <trans-unit id="property.location.label" xml:space="preserve">
+                <target xml:lang="de">Standort</target>
+            </trans-unit>
+            <trans-unit id="property.salaryExpectation.label" xml:space="preserve">
+                <target xml:lang="de">Gehaltsvorstellung</target>
+            </trans-unit>
+            <trans-unit id="property.salaryExpectation.placeholder" xml:space="preserve">
+                <target xml:lang="de">Gehaltsvorstellung</target>
+            </trans-unit>
+            <trans-unit id="property.startDate.label" xml:space="preserve">
+                <target xml:lang="de">Frühester Eintrittstermin</target>
+            </trans-unit>
+            <trans-unit id="property.startDate.placeholder" xml:space="preserve">
+                <target xml:lang="de">Frühester Eintrittstermin</target>
+            </trans-unit>
+            <trans-unit id="property.source.label" xml:space="preserve">
+                <target xml:lang="de">Quelle</target>
+            </trans-unit>
+            <trans-unit id="property.source.placeholder" xml:space="preserve">
+                <target xml:lang="de">Quelle</target>
+            </trans-unit>
+            <trans-unit id="property.upload.label" xml:space="preserve">
+                <target xml:lang="de">Unterlagen</target>
+            </trans-unit>
+            <trans-unit id="property.fileUpload.label" xml:space="preserve">
+                <target xml:lang="de">Zusätzliche Unterlagen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

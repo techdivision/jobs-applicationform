@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="TechDivision.Jobs.ApplicationForm" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>Apply button</source>
+            </trans-unit>
+            <trans-unit id="label.applyNow" xml:space="preserve">
+                <source>apply now</source>
+            </trans-unit>
+            <trans-unit id="properties.applicationFormNode" xml:space="preserve">
+                <source>Application form document node</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

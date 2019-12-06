@@ -1,0 +1,7 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.Phone) < prototype(Neos.Form.Builder:SingleLineText.Definition) {
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.phone.label')}
+    validators {
+        stringLength = Neos.Form.Builder:StringLengthValidator.Definition
+    }
+    properties.placeholder = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.phone.placeholder')}
+}

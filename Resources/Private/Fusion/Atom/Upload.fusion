@@ -1,0 +1,12 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.Upload) < prototype(Neos.Form.Builder:FileUpload.Definition) {
+
+    //todo hier erlaubte extensions übergeben
+    properties.allowedExtensions {
+        png = 'png'
+        pdf = 'pdf'
+        jpg = 'jpg'
+    }
+    required = ${false}
+
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.upload.label')}
+}

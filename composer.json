@@ -1,0 +1,16 @@
+{
+    "name": "techdivision/jobs-applicationform",
+    "type": "neos-plugin",
+    "description": "A formbuilder application form based on the techdivision/jobs packages. ",
+    "require": {
+        "neos/form-builder": "^1.2",
+        "techdivision/jobs" : "^1.0",
+        "neos/swiftmailer": "*",
+        "techdivision/form-encryption": "^1.0"
+    },
+    "extra": {
+        "neos": {
+            "package-key": "TechDivision.Jobs.ApplicationForm"
+        }
+    }
+}

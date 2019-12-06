@@ -1,0 +1,9 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.Jobs) < prototype(Neos.Form.Builder:SingleSelectDropdown.Definition) {
+
+    // api
+    availableJobs = ''
+
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.jobs.label')}
+    required = ${true}
+    properties.options.collection = ${availableJobs}
+}

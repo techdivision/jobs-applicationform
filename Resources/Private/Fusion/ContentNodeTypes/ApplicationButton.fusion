@@ -1,0 +1,15 @@
+prototype(TechDivision.Jobs.ApplicationForm:ApplicationButton) < prototype(Neos.Fusion:Component) {
+
+    link = Neos.Neos:NodeUri {
+        node = ${q(node).property('applicationFormNode')}
+        additionalParams = Neos.Fusion:DataStructure {
+            jobPosting = ${documentNode.identifier}
+        }
+    }
+
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:NodeTypes.ApplicationButton:label.applyNow')}
+
+    renderer = afx`
+        <a href={props.link} role="button" class="jobposting__application-button">{props.label}</a>
+    `
+}

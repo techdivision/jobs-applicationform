@@ -1,0 +1,9 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.Forename) < prototype(Neos.Form.Builder:SingleLineText.Definition) {
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.firstname.label')}
+    validators {
+        stringLength = Neos.Form.Builder:StringLengthValidator.Definition {
+            options.minimum = 3
+        }
+    }
+    properties.placeholder = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.firstname.placeholder')}
+}

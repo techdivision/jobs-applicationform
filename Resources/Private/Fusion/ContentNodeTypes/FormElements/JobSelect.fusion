@@ -1,0 +1,14 @@
+prototype(TechDivision.Jobs.ApplicationForm:FormElements.JobSelect.Definition) < prototype(TechDivision.Jobs.ApplicationForm:Atom.Jobs) {
+    @context.requestedJobPostingUuid = ${String.pregMatch(request.arguments.jobPosting, "/[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}/") ? request.arguments.jobPosting : null}
+
+    @context.availableJobs = Neos.Fusion:Map {
+        items = ${(requestedJobPostingUuid && q(site).find('#' + requestedJobPostingUuid).count() > 0) ? q(site).find('#' + requestedJobPostingUuid) : q(site).find('[instanceof TechDivision.Jobs:Document.JobPosting]').get()}
+        itemName = 'jobPosting'
+        itemRenderer = Neos.Fusion:DataStructure {
+            label = ${q(jobPosting).property('jobPostingTitle')}
+            value = ${q(jobPosting).property('jobPostingTitle')}
+        }
+    }
+
+    @if.jobsAvailable=${availableJobs}
+}

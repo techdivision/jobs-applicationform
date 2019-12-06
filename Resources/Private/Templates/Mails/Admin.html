@@ -1,0 +1,141 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+
+    <body yahoo style="width: 1128px">
+        <table class="main-table" style="width: 800px; border: 2px solid #369eac">
+            <f:if condition="{formValues.salutation} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.salutations.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3><f:translate id="property.salutations.{formValues.salutation}" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.firstname} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.firstname.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.firstname}</h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.lastname} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.lastname.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.lastname}</h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.email} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.email.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.email}</h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.phone} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.phone.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.phone}</h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.company} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.company.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.company}</h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.message} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.message.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.message}</h3>
+                    </td>
+                </tr>
+            </f:if>
+
+
+            <tr>
+                <td><h3><f:translate id="property.additionalInformation.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3></td>
+            </tr>
+
+
+            <f:if condition="{formValues.position} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.position.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <f:for each="{formValues.position}" as="position"><b>{position}</b><br></f:for>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.location} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.location.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <f:for each="{formValues.location}" as="location"><b>{location}</b><br></f:for>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.salaryExpectation} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.salaryExpectation.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.salaryExpectation}</h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.startDate} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.startDate.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.startDate}</h3>
+                    </td>
+                </tr>
+            </f:if>
+            <f:if condition="{formValues.source} ">
+                <tr>
+                    <td>
+                        <h3><f:translate id="property.source.label" package="TechDivision.Jobs.ApplicationForm" source="Main" /></h3>
+                    </td>
+                    <td>
+                        <h3>{formValues.source}</h3>
+                    </td>
+                </tr>
+            </f:if>
+
+        </table>
+    </body>
+</html>

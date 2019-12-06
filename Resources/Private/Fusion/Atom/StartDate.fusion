@@ -1,0 +1,6 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.StartDate) < prototype(Neos.Form.Builder:DatePicker.Definition) {
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.startDate.label')}
+    properties {
+        placeholder = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.startDate.placeholder')}
+    }
+}

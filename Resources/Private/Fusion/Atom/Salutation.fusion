@@ -1,0 +1,18 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.Salutation) < prototype(Neos.Form.Builder:SingleSelectRadiobuttons.Definition) {
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.salutation.label')}
+    required = ${true}
+    properties.options.collection = Neos.Fusion:DataStructure {
+        mr = Neos.Fusion:DataStructure {
+            value = 'mr'
+            label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.salutation.mr')}
+        }
+        mrs = Neos.Fusion:DataStructure {
+            value = 'mrs'
+            label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.salutation.mrs')}
+        }
+        divers = Neos.Fusion:DataStructure {
+            value = 'divers'
+            label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.salutation.divers')}
+        }
+    }
+}

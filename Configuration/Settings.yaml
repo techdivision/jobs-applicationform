@@ -1,0 +1,10 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          TechDivision.Jobs.ApplicationForm:
+            - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        TechDivision.Jobs.ApplicationForm: true

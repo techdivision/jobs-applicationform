@@ -1,0 +1,69 @@
+prototype(TechDivision.Jobs.ApplicationForm:ApplicationForm) < prototype(Neos.Form.Builder:Form) {
+    @context.formNode = ${q(node).closest('[instanceof TechDivision.Jobs.ApplicationForm:ApplicationForm]').get(0)}
+    @context.formFusionPath = ${this.path}
+    @context.availableJobLocations = Neos.Fusion:Map {
+        items = ${q(site).find('[instanceof TechDivision.Jobs:JobLocation]').get()}
+        itemName = 'location'
+        itemRenderer = Neos.Fusion:DataStructure {
+            label = ${q(location).property('jobLocationTitle')}
+            value = ${q(location).property('jobLocationTitle')}
+        }
+    }
+
+    identifier = ${formNode.properties.identifier ? formNode.properties.identifier : 'form-' + formNode.identifier}
+    presetName = ${formNode.properties.preset ? formNode.properties.preset : 'default'}
+    formElementType = ${'Neos.Form:Form'}
+
+    renderCallbacks.formElementWrapping = Neos.Form.Builder:FormElementWrapping {
+        @if.isInBackend = ${formNode.context.inBackend}
+    }
+
+
+    firstPage {
+        label = ${formNode.properties.label}
+        renderingOptions._node = ${formNode}
+        renderingOptions._fusionPath = ${formFusionPath}
+
+        elements {
+            salutation = TechDivision.Jobs.ApplicationForm:Atom.Salutation
+            firstname = TechDivision.Jobs.ApplicationForm:Atom.Forename
+            lastname = TechDivision.Jobs.ApplicationForm:Atom.Lastname
+            email = TechDivision.Jobs.ApplicationForm:Atom.Email
+
+            additionalInformation = Neos.Form.Builder:Section.Definition {
+                label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.additionalInformation.label')}
+                elements {
+                    position = TechDivision.Jobs.ApplicationForm:FormElements.JobSelect.Definition
+                    location = TechDivision.Jobs.ApplicationForm:Atom.Location {
+                        @if.hasFoundLocations=${availableJobLocations}
+                    }
+                    salaryExpectation = TechDivision.Jobs.ApplicationForm:Atom.SalaryExpectation
+                    startDate = TechDivision.Jobs.ApplicationForm:Atom.StartDate
+                    source = TechDivision.Jobs.ApplicationForm:Atom.Source
+                }
+            }
+            upload = Neos.Form.Builder:Section.Definition {
+                label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.fileUpload.label')}
+                elements {
+                    uploadOne = TechDivision.Jobs.ApplicationForm:Atom.Upload
+                    uploadTwo = TechDivision.Jobs.ApplicationForm:Atom.Upload
+                    uploadThree = TechDivision.Jobs.ApplicationForm:Atom.Upload
+                    uploadFour = TechDivision.Jobs.ApplicationForm:Atom.Upload
+                }
+            }
+        }
+    }
+
+    finishers = Neos.Form.Builder:NodeBasedFinisherCollection {
+        collection = ${q(formNode).children('finishers').children()}
+    }
+
+    @cache {
+        mode = 'uncached'
+        context {
+            1 = 'node'
+            2 = 'documentNode'
+            3 = 'site'
+        }
+    }
+}

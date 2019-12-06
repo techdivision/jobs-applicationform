@@ -1,0 +1,7 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.Email) < prototype(Neos.Form.Builder:SingleLineText.Definition) {
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.email.label')}
+    validators {
+        emailAddress = Neos.Form.Builder:EmailAddressValidator.Definition
+    }
+    properties.placeholder = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.email.placeholder')}
+}

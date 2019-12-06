@@ -1,0 +1,23 @@
+'TechDivision.Jobs.ApplicationForm:ApplicationForm':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: i18n
+    group: 'jobs'
+    icon: 'icon-briefcase'
+    position: 'end'
+    inspector:
+      tabs:
+        'settings':
+          icon: 'icon-cogs'
+          label: i18n
+          position: 1
+      groups:
+        'settings':
+          icon: 'icon-cog'
+          label: 'Form settings'
+          position: 1
+          tab: 'settings'
+  childNodes:
+    'finishers':
+      type: 'Neos.Form.Builder:FinisherCollection'

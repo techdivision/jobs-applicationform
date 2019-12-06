@@ -1,0 +1,13 @@
+'TechDivision.Jobs.ApplicationForm:FormElements.JobSelect':
+  superTypes:
+    'Neos.Form.Builder:FormElement': TRUE
+    'Neos.Form.Builder:DefaultValueMixin': FALSE
+  ui:
+    label: 'JobSelect'
+    icon: 'icon-list-ol'
+    inspector:
+      groups:
+        'formElement':
+          icon: 'icon-list-ol'
+    group: 'form.select'
+    position: 10

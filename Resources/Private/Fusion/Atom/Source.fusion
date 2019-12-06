@@ -1,0 +1,4 @@
+prototype(TechDivision.Jobs.ApplicationForm:Atom.Source) < prototype(Neos.Form.Builder:MultiLineText.Definition) {
+    label = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.source.label')}
+    properties.placeholder = ${Translation.translate('TechDivision.Jobs.ApplicationForm:Main:property.source.placeholder')}
+}
