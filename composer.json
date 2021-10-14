@@ -3,8 +3,9 @@
     "type": "neos-plugin",
     "description": "A formbuilder application form based on the techdivision/jobs packages. ",
     "require": {
-        "neos/form-builder": "^1.2",
-        "techdivision/jobs" : "^1.0",
+        "neos/form-builder": "^2.2",
+        "techdivision/jobs" : "^2.0",
+        "neos/neos": "^5.0 || ^7.0",
         "neos/swiftmailer": "*",
         "techdivision/form-encryption": "^1.0"
     },
